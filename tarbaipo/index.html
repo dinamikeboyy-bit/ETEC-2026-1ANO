@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas com Gradiente</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: url(pexels-wolfgang-1002140-2747446.jpg) no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .box {
+            height: 120px;
+            border-radius: 12px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s;
+            background: linear-gradient(45deg, #000000, #555555, #ffffff);
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+
+        .image-box {
+            height: 200px;
+            border-radius: 12px;
+            background: url("Captura de tela 2026-04-29 221138.png") no-repeat center center/cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">Texto 1</div>
+        <div class="box">Texto 2</div>
+        <div class="box">Texto 3</div>
+
+        <div class="image-box"></div>
+
+        <div class="box">Texto 4</div>
+        <div class="box">Texto 5</div>
+        <div class="box">Texto 6</div>
+        <div class="box">Texto 7</div>
+        <div class="box">Texto 8</div>
+        <div class="box">Texto 9</div>
+        <div class="box">Texto 10</div>
+        <div class="box">Texto 11</div>
+        <div class="box">Texto 12</div>
+    </div>
+
+</body>
+
+</html>
